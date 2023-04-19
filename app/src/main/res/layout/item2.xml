@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="#222222"
+        android:gravity="center_vertical"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/human"
+            android:adjustViewBounds="true"
+            app:shapeAppearanceOverlay="@style/circled"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:id="@+id/image"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="Magnus"
+            android:layout_marginStart="5dp"
+            android:id="@+id/name"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DCDCDC"
+            android:textSize="16dp"
+            android:text="Let's play chess"
+            android:layout_marginStart="5dp"
+            android:id="@+id/text"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C8C8C8"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>
